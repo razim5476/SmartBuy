@@ -22,6 +22,8 @@ from sellers.admin import seller_admin_site
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('seller-admin/', seller_admin_site.urls),
-    path('api/',include('users.urls'))
+    path('api-user/',include('users.urls')),
+    path('api-products/',include('products.urls')),
+    path('api-order/',include('orders.urls')),
     
 ]
